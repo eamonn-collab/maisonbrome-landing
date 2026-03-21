@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Brome â Knowlton</title>
-  <meta name="description" content="Maison Brome. LÃ  oÃ¹ le design rencontre le terroir. Where design meets the land. Knowlton, Cantons-de-l'Est. ÃtÃ© 2026.">
-  <meta property="og:title" content="Maison Brome â Knowlton">
-  <meta property="og:description" content="LÃ  oÃ¹ le design rencontre le terroir. Where design meets the land. ÃtÃ© / Summer 2026.">
+  <title>Maison Brome — Knowlton</title>
+  <meta name="description" content="Maison Brome. Là où le design rencontre le terroir. Where design meets the land. Knowlton, Cantons-de-l'Est. Été 2026.">
+  <meta property="og:title" content="Maison Brome — Knowlton">
+  <meta property="og:description" content="Là où le design rencontre le terroir. Where design meets the land. Été / Summer 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://maisonbrome.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
       overflow-x: hidden;
     }
 
-    /* ââ Global language toggle ââ */
+    /* ── Global language toggle ── */
     .lang-toggle-global {
       position: fixed;
       top: 1.5rem;
@@ -87,9 +87,9 @@
 
     .lang-toggle-global.on-cream .lang-btn.active:first-child { border-right: none; }
 
-    /* âââââââââââââââââââââââââââââââââââââââ
-       SECTION 1: HERO â Logo + Brand
-       âââââââââââââââââââââââââââââââââââââââ */
+    /* ═══════════════════════════════════════
+       SECTION 1: HERO — Logo + Brand
+       ═══════════════════════════════════════ */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -101,7 +101,7 @@
       text-align: center;
     }
 
-    /* Soft warm glow behind logo â CSS handles the contrast */
+    /* Soft warm glow behind logo — CSS handles the contrast */
     .logo-glow {
       position: relative;
       margin-bottom: 1.8rem;
@@ -227,9 +227,9 @@
       margin: 0 auto;
     }
 
-    /* âââââââââââââââââââââââââââââââââââââââ
+    /* ═══════════════════════════════════════
        SECTION 2: FOUNDERS STORY
-       âââââââââââââââââââââââââââââââââââââââ */
+       ═══════════════════════════════════════ */
     .story {
       background: var(--cream);
       color: #2c2418;
@@ -348,7 +348,7 @@
       color: #1a1410;
     }
 
-    /* ââ Founders grid ââ */
+    /* ── Founders grid ── */
     .founders-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -395,9 +395,9 @@
       margin: 2.5rem 0;
     }
 
-    /* âââââââââââââââââââââââââââââââââââââââ
+    /* ═══════════════════════════════════════
        SECTION 3: FOOTER
-       âââââââââââââââââââââââââââââââââââââââ */
+       ═══════════════════════════════════════ */
     .site-footer {
       background: var(--navy);
       text-align: center;
@@ -432,9 +432,9 @@
       margin-top: 1rem;
     }
 
-    /* âââââââââââââââââââââââââââââââââââââââ
+    /* ═══════════════════════════════════════
        SCROLL ANIMATIONS
-       âââââââââââââââââââââââââââââââââââââââ */
+       ═══════════════════════════════════════ */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -451,137 +451,136 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* âââââââââââââââââââââââââââââââââââââââ
+    /* ═══════════════════════════════════════
        RESPONSIVE
-       âââââââââââââââââââââââââââââââââââââââ */
+       ═══════════════════════════════════════ */
     @media (max-width: 768px) {
       .brand-name { font-size: 2rem; letter-spacing: 0.16em; }
-      .house-mark { width: 190px; }
-      .story-headline { font-size: 2rem; }
-      .founders-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .pull-quote { font-size: 1.25rem; }
-      .story { padding: 3.5rem 1.5rem 3rem; }
+      .story-headline { font-size: 2.2rem; }
+      .founders-grid { grid-template-columns: 1fr; }
+      .house-mark { width: 180px; }
     }
 
     @media (max-width: 480px) {
-      .hero { padding: 2rem 1.5rem; }
       .brand-name { font-size: 1.5rem; letter-spacing: 0.12em; }
-      .house-mark { width: 150px; }
-      .tagline { font-size: 1.05rem; }
-      .hero-copy p { font-size: 1rem; }
-      .location { font-size: 0.58rem; }
-      .opening-badge { font-size: 0.55rem; padding: 0.45rem 1rem; }
-      .story-headline { font-size: 1.6rem; }
-      .body-text { font-size: 1rem; }
+      .story-headline { font-size: 1.8rem; }
+      .pull-quote { font-size: 1.2rem; }
+      .house-mark { width: 140px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- âââ HERO âââ -->
-  <section class="hero">
+<!-- Global language toggle -->
+<div class="lang-toggle-global">
+  <button class="lang-btn active" onclick="switchLang('fr')">FR</button>
+  <button class="lang-btn" onclick="switchLang('en')">EN</button>
+</div>
 
-    <div class="lang-toggle-global">
-      <button class="lang-btn active" onclick="switchLang('fr')">FR</button>
-      <button class="lang-btn" onclick="switchLang('en')">EN</button>
-    </div>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="logo-glow">
+    <img src="logo.png" alt="Maison Brome" class="house-mark">
+  </div>
 
-    <div class="logo-glow">
-      <img class="house-mark" src="logo.png" alt="Maison Brome">
-    </div>
+  <h1 class="brand-name">Maison Brome</h1>
+  <div class="gold-rule"></div>
+  <p class="location">Knowlton &middot; Cantons-de-l&rsquo;Est</p>
 
-    <div class="brand-name">Maison Brome</div>
+  <!-- FR tagline -->
+  <p class="tagline lang-fr">Objets choisis.</p>
+  <!-- EN tagline -->
+  <p class="tagline lang-en" style="display:none">Curated objects.</p>
 
-    <div class="gold-rule"></div>
+  <!-- FR hero copy -->
+  <div class="hero-copy lang-fr">
+    <p>Là où le design rencontre le terroir. Une maison de village réinventée en destination — objets d&rsquo;artisans, produits du territoire, art de vivre des Cantons.</p>
+  </div>
+  <!-- EN hero copy -->
+  <div class="hero-copy lang-en" style="display:none">
+    <p>Where design meets the land. A village house reimagined as a destination — artisan objects, regional products, Townships art de vivre.</p>
+  </div>
 
-    <div class="location lang-fr">Knowlton &middot; Cantons-de-l&rsquo;Est</div>
-    <div class="location lang-en" style="display:none;">Knowlton &middot; Eastern Townships</div>
+  <!-- FR opening badge -->
+  <div class="opening-badge lang-fr">Ouverture &middot; Été 2026</div>
+  <!-- EN opening badge -->
+  <div class="opening-badge lang-en" style="display:none">Opening &middot; Summer 2026</div>
 
-    <div class="tagline lang-fr">Objets choisis.</div>
-    <div class="tagline lang-en" style="display:none;">There&rsquo;s no place like Brome.</div>
+  <div class="scroll-hint"><span></span></div>
+</section>
 
-    <div class="hero-copy lang-fr">
-      <p>LÃ  oÃ¹ le design rencontre le terroir. Une maison de village rÃ©inventÃ©e en destination&nbsp;&mdash; objets d&rsquo;artisans, produits du territoire, art de vivre des Cantons.</p>
-    </div>
-    <div class="hero-copy lang-en" style="display:none;">
-      <p>Where design meets the land. A village house reimagined as a destination&nbsp;&mdash; artisan objects, local craft, and the art of country living.</p>
-    </div>
 
-    <div class="opening-badge lang-fr">Ouverture &middot; ÃtÃ© 2026</div>
-    <div class="opening-badge lang-en" style="display:none;">Opening &middot; Summer 2026</div>
-
-  </section>
-
-    <section class="story">
+<!-- ═══ THE HOUSE SToRY ═══ -->
+  <section class="story">
     <div class="story-inner">
 
-      <!-- âââ FRENCH VERSION âââ -->
+      <!-- ─── FRENCH VERSION ─── -->
       <div id="story-fr" class="lang-content active">
 
         <div class="eyebrow reveal">Les fondateurs</div>
 
-        <h2 class="story-headline reveal">BÃ¢ti par des gens qui<br><em>n&rsquo;attendent pas.</em></h2>
-        <p class="story-sub reveal">L&rsquo;histoire derriÃ¨re la boutique</p>
+        <h2 class="story-headline reveal">Construit par des gens qui<br><em>n&rsquo;arrêtent pas.</em></h2>
+        <p class="story-sub reveal">L&rsquo;Histoire derrière la maison</p>
 
         <div class="story-divider reveal"></div>
 
         <blockquote class="pull-quote reveal">
-          &laquo;&nbsp;Tout le monde disait que c&rsquo;Ã©tait fou. C&rsquo;Ã©tait plus ou moins l&rsquo;idÃ©e.&nbsp;&raquo;
+          &ldquo;Tout le monde disait que c&rsquo;était fou. C&rsquo;était plus ou moins l&rsquo;idée.&rdquo;
         </blockquote>
 
         <div class="body-section reveal">
-          <div class="section-label">I. Le bÃ¢timent</div>
-          <p class="body-text drop-cap">Avant la boutique, il y avait un bÃ¢timent. L&rsquo;un des plus anciens de Knowlton&nbsp;&mdash; une maison de ferme datant de 1893, avec une grange Ã  l&rsquo;arriÃ¨re et plus d&rsquo;un siÃ¨cle de mÃ©moire dans ses murs. Elle se tenait en bordure du centre-ville, tÃ©moin des transformations du village au fil des gÃ©nÃ©rations.</p>
-          <p class="body-text">Dans les annÃ©es 1980, elle abritait LL Brome, un magasin d&rsquo;usine qui attirait les foules depuis MontrÃ©al pendant l&rsquo;Ã¢ge d&rsquo;or commercial de Knowlton&nbsp;&mdash; une Ã©poque oÃ¹ le village Ã©tait incontournable, et ce bÃ¢timent en Ã©tait le c&oelig;ur.</p>
-          <p class="body-text">JoÃ«lle Chartrand et son mari Eamonn ont acquis le bÃ¢timent il y a quelques annÃ©es, sans dessein prÃ©cis, mais avec une conviction&nbsp;: qu&rsquo;un lieu aussi enracinÃ© dans l&rsquo;histoire du village devait lui redonner quelque chose. <em>Maison</em>&nbsp;&mdash; pour la ferme. <em>Brome</em>&nbsp;&mdash; pour le lac, et pour LL Brome, la boutique qui avait jadis rendu cette adresse lÃ©gendaire.</p>
+          <div class="section-label">I. Le bâtiment</div>
+          <p class="body-text drop-cap">Avant le magasin, il y avait un bâtiment. L&rsquo;un des plus anciens de Knowlton&nbsp;&mdash; une ferme datant de 1893, avec une grange à l&rsquo;arrière et plus d&rsquo;un siècle de mémoire dans ses murs. Il se dressait à la lisière du centre-ville, témoin silencieux des transformations du village à travers les générations.</p>
+          <p class="body-text">Dans les années 1980, il abritait LL Brome, un magasin d&rsquo;usine qui attirait les foules de Montréal pendant l&rsquo;âpee commerciale de Knowlton&nbsp;&mdash; une époque où le village était vraiment sur la carte, et ce bâtiment en était le cœur.</p>
+          <p class="body-text">Joële Chartrand et son mari Eamonn ont acheté le bâtiment il y a quelques années, non pas pour un projet précis, mais par conviction&nbsp;: qu&rsquo;un bâtiment aussi enraciné dans l&rsquo;histoire du village devait lui rendre quelque chose. <em>Maison</em>&nbsp;&mdash; pour la ferme. <em>Brome</em>&nbsp;&mdash; pour le lac, et pour LL Brome, le magasin qui avait autrefois rendu cette adresse légendaire.</p>
         </div>
 
         <div class="ornament reveal">&mdash; &middot; &mdash;</div>
 
         <div class="body-section reveal">
           <div class="section-label">II. La vision</div>
-          <p class="body-text">L&rsquo;idÃ©e est nÃ©e chez JoÃ«lle&nbsp;&mdash; un commerce qui reflÃ¨terait l&rsquo;identitÃ© vÃ©ritable de Knowlton. Pas une boutique de souvenirs. Pas une chaÃ®ne. Quelque chose qui cÃ©lÃ©brerait les artisans de la rÃ©gion, le patrimoine de ce coin particulier du QuÃ©bec, et la qualitÃ© durable des choses fabriquÃ©es avec soin et intention. Le genre d&rsquo;idÃ©e qui trouve vite les bonnes personnes. Eamonn l&rsquo;a vue immÃ©diatement.</p>
-          <p class="body-text">Ensemble, ils avaient passÃ© des annÃ©es Ã  bÃ¢tir et Ã  faire croÃ®tre des entreprises ambitieuses. Ils connaissaient la diffÃ©rence entre une idÃ©e qui sonne bien et une idÃ©e qui transforme rÃ©ellement un lieu. Celle-ci Ã©tait la seconde. Et ce n&rsquo;Ã©tait que le dÃ©but.</p>
+          <p class="body-text">L&rsquo;idée est née avec Joële&nbsp;&mdash; un magasin qui reflète ce que Knowlton est vraiment. Pas un piège à touristes. Pas une chaîne. Quelque chose qui célèbre les artisans de la région, le patrimoine de ce coin particulier du Québec, et la qualité durable des objets façonnés avec soin et intention. C&rsquo;était le genre d&rsquo;idée qui trouve vite les bonnes personnes. Eamonn l&rsquo;a vue immédiatement.</p>
+          <p class="body-text">Ensemble, ils avaient passé des années à bâtir et à faire croître des entreprises ambitieuses. Ils connaissaient la différence entre une idée qui sonne bien et une idée qui transforme réellement un lieu. Celle-ci était la seconde. Et ce n&rsquo;était que le début.</p>
         </div>
 
         <div class="ornament reveal">&mdash; &middot; &mdash;</div>
 
         <div class="body-section reveal">
           <div class="section-label">III. Le partenariat</div>
-          <p class="body-text">Maxime Vandal et Richard Ouellette&nbsp;&mdash; architecte et designer, partenaires de vie et force crÃ©ative derriÃ¨re Les Ensembliers&nbsp;&mdash; ont entendu parler de Maison Brome avant mÃªme que les murs ne soient montÃ©s. PremiÃ¨re pratique intÃ©grÃ©e d&rsquo;architecture, de design et de construction au QuÃ©bec, Les Ensembliers avaient bÃ¢ti en deux dÃ©cennies une rÃ©putation qui dÃ©passait largement les frontiÃ¨res du Canada&nbsp;: publiÃ©s dans Architectural Digest, Elle Decor, Veranda et House&nbsp;&amp;&nbsp;Home.</p>
-          <p class="body-text">Quand ils ont entendu parler de Maison Brome, ils n&rsquo;ont pas hÃ©sitÃ©. Ils ont demandÃ© s&rsquo;ils pouvaient en faire partie. Richard, en fait, portait depuis longtemps le rÃªve discret d&rsquo;un espace curÃ©&nbsp;&mdash; un lieu oÃ¹ les artisans en qui il croyait pourraient enfin Ãªtre vus.</p>
-          <p class="body-text">Quatre personnes aux instincts alignÃ©s, aux compÃ©tences complÃ©mentaires, et partageant la conviction de faire les choses correctement, en allant plus vite que quiconque autour d&rsquo;eux ne le jugeait sage. Ils ont sautÃ©. C&rsquo;est ce que font les gens comme eux.</p>
+          <p class="body-text">Maxime Vandal et Richard Ouellette&nbsp;&mdash; architecte et designer, partenaires de vie et force créative derrière Les Ensembliers&nbsp;&mdash; ont entendu parler de Maison Brome avant même que les murs ne soient montés. Première pratique intégrée d&rsquo;architecture, de design et de construction au Québec, Les Ensembliers avaient bâti en deux décennies une réputation qui dépassait largement les frontières du Canada&nbsp;: publiés dans Architectural Digest, Elle Decor, Veranda et House&nbsp;&amp;&nbsp;Home.</p>
+          <p class="body-text">Quand ils ont entendu parler de Maison Brome, ils n&rsquo;ont pas hésité. Ils ont demandé s&rsquo;ils pouvaient en faire partie. Richard, en fait, portait depuis longtemps le rêve discret d&rsquo;un espace curé&nbsp;&mdash; un lieu où les artisans en qui il croyait pourraient enfin être vus.</p>
+          <p class="body-text">Quatre personnes aux instincts alignés, aux compétences complémentaires, et partageant la conviction de faire les choses correctement, en allant plus vite que quiconque autour d&rsquo;eux ne le jugeait sage. Ils ont sauté. C&rsquo;est ce que font les gens comme eux.</p>
         </div>
 
         <div class="ornament reveal">&mdash; &middot; &mdash;</div>
 
         <div class="founders-grid reveal">
           <div class="founder-card">
-            <div class="founder-name">JoÃ«lle Chartrand</div>
+            <div class="founder-name">Joëlle Chartrand</div>
             <div class="founder-role">Cofondatrice</div>
-            <div class="founder-desc">Entrepreneure, bÃ¢tisseuse de communautÃ© et la vision derriÃ¨re Maison Brome. Une fondatrice en sÃ©rie avec un parcours de crÃ©ation d&rsquo;entreprises d&rsquo;envergure.</div>
+            <div class="founder-desc">Entrepreneure, bâtisseuse de communauté et la vision derrière Maison Brome. Une fondatrice en série avec un parcours de création d&rsquo;entreprises d&rsquo;envergure.</div>
           </div>
           <div class="founder-card">
             <div class="founder-name">Eamonn O&rsquo;Rourke</div>
             <div class="founder-role">Cofondateur</div>
-            <div class="founder-desc">StratÃ¨ge d&rsquo;affaires et entrepreneur technologique, reconnu pour avoir bÃ¢ti et fait croÃ®tre certaines des entreprises les plus ambitieuses au Canada.</div>
+            <div class="founder-desc">Stratège d&rsquo;affaires et entrepreneur technologique, reconnu pour avoir bâti et fait croître certaines des entreprises les plus ambitieuses au Canada.</div>
           </div>
           <div class="founder-card">
             <div class="founder-name">Maxime Vandal</div>
             <div class="founder-role">Cofondateur, Les Ensembliers</div>
-            <div class="founder-desc">Architecte et cofondateur de la premiÃ¨re firme intÃ©grÃ©e d&rsquo;architecture, design et construction au QuÃ©bec.</div>
+            <div class="founder-desc">Architecte et cofondateur de la première firme intégrée d&rsquo;architecture, design et construction au Québec.</div>
           </div>
           <div class="founder-card">
             <div class="founder-name">Richard Ouellette</div>
             <div class="founder-role">Cofondateur, Les Ensembliers</div>
-            <div class="founder-desc">Designer, cofondateur des Ensembliers et l&rsquo;une des voix crÃ©atives les plus reconnues au QuÃ©bec.</div>
+            <div class="founder-desc">Designer, cofondateur des Ensembliers et l&rsquo;une des voix créatives les plus reconnues au Québec.</div>
           </div>
         </div>
 
-        <p class="closing reveal">Entre eux&nbsp;: un bÃ¢timent chargÃ© d&rsquo;un siÃ¨cle d&rsquo;histoire, un village qui mÃ©rite mieux que l&rsquo;ordinaire, et la confiance particuliÃ¨re de gens qui savent faire la diffÃ©rence entre un risque et une erreur.</p>
+        <p class="closing reveal">Entre eux&nbsp;: un bâtiment chargé d&rsquo;un siècle d&rsquo;histoire, un village qui mérite mieux que l&rsquo;ordinaire, et la confiance particulière de gens qui savent faire la différence entre un risque et une erreur.</p>
       </div>
 
-      <!-- âââ ENGLISH VERSION âââ -->
+      <!-- ─── ENGLISH VERSION ─── -->
       <div id="story-en" class="lang-content">
 
         <div class="eyebrow reveal">The Founders</div>
@@ -598,15 +597,15 @@
         <div class="body-section reveal">
           <div class="section-label">I. The Building</div>
           <p class="body-text drop-cap">Before there was a store, there was a building. One of the oldest in Knowlton&nbsp;&mdash; a farmhouse dating to 1893, with a barn at its back and more than a century of memory in its walls. It stood at the edge of the downtown core, watching the town change around it across generations.</p>
-          <p class="body-text">In the 1980s, it was home to LL Brome, a factory outlet that drew crowds from MontrÃ©al during Knowlton&rsquo;s commercial heyday&nbsp;&mdash; a moment when the town was very much on the map, and this building was at the centre of it.</p>
-          <p class="body-text">JoÃ«lle Chartrand and her husband Eamonn bought the building a few years ago, not for any single purpose, but out of a conviction: that a building this rooted in the town&rsquo;s history should give something back to it. <em>Maison</em>&nbsp;&mdash; for the farmhouse. <em>Brome</em>&nbsp;&mdash; for the lake, and for LL Brome, the store that once made this address legendary.</p>
+          <p class="body-text">In the 1980s, it was home to LL Brome, a factory outlet that drew crowds from Montréal during Knowlton&rsquo;s commercial heyday&nbsp;&mdash; a moment when the town was very much on the map, and this building was at the centre of it.</p>
+          <p class="body-text">Joëlle Chartrand and her husband Eamonn bought the building a few years ago, not for any single purpose, but out of a conviction: that a building this rooted in the town&rsquo;s history should give something back to it. <em>Maison</em>&nbsp;&mdash; for the farmhouse. <em>Brome</em>&nbsp;&mdash; for the lake, and for LL Brome, the store that once made this address legendary.</p>
         </div>
 
         <div class="ornament reveal">&mdash; &middot; &mdash;</div>
 
         <div class="body-section reveal">
           <div class="section-label">II. The Vision</div>
-          <p class="body-text">The idea began with JoÃ«lle&nbsp;&mdash; a store that reflected who Knowlton actually was. Not a tourist shop. Not a chain. Something that celebrated the makers of the region, the heritage of this particular corner of QuÃ©bec, and the enduring quality of things crafted with care and intention. It was the kind of idea that finds the right people quickly. Eamonn saw it immediately.</p>
+          <p class="body-text">The idea began with Joëlle&nbsp;&mdash; a store that reflected who Knowlton actually was. Not a tourist shop. Not a chain. Something that celebrated the makers of the region, the heritage of this particular corner of Québec, and the enduring quality of things crafted with care and intention. It was the kind of idea that finds the right people quickly. Eamonn saw it immediately.</p>
           <p class="body-text">Together, they had spent years building and scaling businesses of serious ambition. They knew the difference between an idea that sounds good and one that actually changes a place. This was the latter. And it was only the beginning.</p>
         </div>
 
@@ -614,7 +613,7 @@
 
         <div class="body-section reveal">
           <div class="section-label">III. The Partnership</div>
-          <p class="body-text">Maxime Vandal and Richard Ouellette&nbsp;&mdash; architect and designer, life partners, and the creative force behind Les Ensembliers&nbsp;&mdash; heard about Maison Brome before it had walls. QuÃ©bec&rsquo;s first fully integrated architecture, design, and build practice, Les Ensembliers had spent two decades earning a reputation that extended well beyond Canada: featured in Architectural Digest, Elle Decor, Veranda, and House&nbsp;&amp;&nbsp;Home.</p>
+          <p class="body-text">Maxime Vandal and Richard Ouellette&nbsp;&mdash; architect and designer, life partners, and the creative force behind Les Ensembliers&nbsp;&mdash; heard about Maison Brome before it had walls. Québec&rsquo;s first fully integrated architecture, design, and build practice, Les Ensembliers had spent two decades earning a reputation that extended well beyond Canada: featured in Architectural Digest, Elle Decor, Veranda, and House&nbsp;&amp;&nbsp;Home.</p>
           <p class="body-text">When they heard about Maison Brome, they didn&rsquo;t hesitate. They asked if they could be part of it. Richard, it turned out, had long held a quiet dream of a curated retail space&nbsp;&mdash; a room where the makers he believed in could finally be seen.</p>
           <p class="body-text">Four people with aligned instincts, complementary skills, and a shared belief in doing things properly, moving faster than anyone around them thought was wise. They jumped. It&rsquo;s what people like this do.</p>
         </div>
@@ -623,7 +622,7 @@
 
         <div class="founders-grid reveal">
           <div class="founder-card">
-            <div class="founder-name">JoÃ«lle Chartrand</div>
+            <div class="founder-name">Joëlle Chartrand</div>
             <div class="founder-role">Co-founder</div>
             <div class="founder-desc">Entrepreneur, community builder, and the vision behind Maison Brome. A serial founder with a track record of building companies of scale and consequence.</div>
           </div>
@@ -635,12 +634,12 @@
           <div class="founder-card">
             <div class="founder-name">Maxime Vandal</div>
             <div class="founder-role">Co-founder, Les Ensembliers</div>
-            <div class="founder-desc">Architect and co-founder of QuÃ©bec&rsquo;s first integrated architecture, design, and build firm.</div>
+            <div class="founder-desc">Architect and co-founder of Québec&rsquo;s first integrated architecture, design, and build firm.</div>
           </div>
           <div class="founder-card">
             <div class="founder-name">Richard Ouellette</div>
             <div class="founder-role">Co-founder, Les Ensembliers</div>
-            <div class="founder-desc">Designer, co-founder of Les Ensembliers, and one of QuÃ©bec&rsquo;s most recognized creative voices.</div>
+            <div class="founder-desc">Designer, co-founder of Les Ensembliers, and one of Québec&rsquo;s most recognized creative voices.</div>
           </div>
         </div>
 
@@ -651,7 +650,7 @@
   </section>
 
 
-<!-- âââ FOOTER âââ -->
+<!-- ═══ FOOTER ═══ -->
   <footer class="site-footer">
     <div class="footer-brand">Maison Brome</div>
     <a href="https://www.instagram.com/maisonbrome/" target="_blank" rel="noopener">@maisonbrome</a>
